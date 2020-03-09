@@ -143,3 +143,7 @@ License
 MIT license, see the LICENSE file. You can use obfuscator in open source
 projects and commercial products.
 
+TODO
+----
+
+- add logic to handle superusers, if needed

@@ -32,6 +32,16 @@ class ObfuscatorUtils(object):
             hashed_value = hashed_value[:(max_length - length)]
         return hashed_value
 
+    @staticmethod
+    def json(value, max_length=None, **kwargs):
+        """ """
+        import json
+        hashed_value = hashlib.sha224(json.dumps(value)).hexdigest()
+        length = len(hashed_value)
+        if max_length and length > max_length:
+            hashed_value = hashed_value[:(max_length - length)]
+        return {'obfuscated_data': hashed_value}
+
     @classmethod
     def obfuscate(cls, field, value):
         name = settings.FIELDS_MAPPING.get(type(field), None)
