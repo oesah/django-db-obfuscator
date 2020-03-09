@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.contrib.contenttypes.models import ContentType
 from django.core.management.base import BaseCommand
 
@@ -15,12 +12,22 @@ class Command(BaseCommand):
         """ """
         args_required = not bool(settings.FIELDS)
         parser.add_argument(
-            '--model', type=str, required=args_required, dest='model',
-            metavar="app_label.ModelClass", help="model name to obfuscate")
+            '--model',
+            type=str,
+            required=args_required,
+            dest='model',
+            metavar="app_label.ModelClass",
+            help="model name to obfuscate",
+        )
         parser.add_argument(
-            '--fields', nargs='+', type=str, required=args_required,
-            dest='fields', metavar="field",
-            help="fields name of model to be obfuscated")
+            '--fields',
+            nargs='+',
+            type=str,
+            required=args_required,
+            dest='fields',
+            metavar="field",
+            help="fields name of model to be obfuscated",
+        )
 
     def handle(self, *args, **options):
         """ """
@@ -39,8 +46,9 @@ class Command(BaseCommand):
     def work(self, model_class, fields):
         if self._validate_fields(model_class, fields):
             qs = model_class._default_manager.only(*fields).all()
-            self.pinfo("Starting offuscation: model={} fields={} total={}"
-                       .format(model_class, ','.join(fields), qs.count()))
+            self.pinfo(
+                "Starting offuscation: model={} fields={} total={}".format(
+                    model_class, ','.join(fields), qs.count()))
             for obj in qs:
                 data = {}
                 for field_name in fields:
@@ -59,10 +67,8 @@ class Command(BaseCommand):
             if field_name not in valid_fields:
                 invalid_fields.append(field_name)
         if invalid_fields:
-            raise ValueError(
-                "Invalid fields for model class {}: {}"
-                .format(model_class.__class__.__name__,
-                        ",".join(invalid_fields)))
+            raise ValueError("Invalid fields for model class {}: {}".format(
+                model_class.__class__.__name__, ",".join(invalid_fields)))
         return True
 
     def _get_model_class(self, option):

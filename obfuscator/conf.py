@@ -1,11 +1,7 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from importlib import import_module
 
 from django.conf import settings as dj_settings
 from django.db import models
-
 
 DEFAULTS = {
     'OBFUSCATOR_CLASS': 'obfuscator.utils.ObfuscatorUtils',
@@ -17,9 +13,7 @@ DEFAULTS = {
     'FIELDS': {}
 }
 
-IMPORT_STRINGS = (
-    'FIELD_OBFUSCATOR_CLASS'
-)
+IMPORT_STRINGS = ('FIELD_OBFUSCATOR_CLASS')
 
 
 def import_from_string(val):
@@ -33,7 +27,10 @@ def import_from_string(val):
         return getattr(module, class_name)
     except (ImportError, AttributeError) as e:
         msg = "Could not import '{}'. {}: {}.".format(
-            val, e.__class__.__name__, e)
+            val,
+            e.__class__.__name__,
+            e,
+        )
         raise ImportError(msg)
 
 
