@@ -9,13 +9,12 @@ Django DB Obfuscator
 .. image:: https://img.shields.io/travis/oesah/obfuscator.svg
         :target: https://travis-ci.com/oesah/obfuscator
 
-.. image:: https://readthedocs.org/projects/obfuscator/badge/?version=latest
-        :target: https://obfuscator.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/django-db-obfuscator/badge/?version=latest
+        :target: https://django-db-obfuscator.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-
-.. image:: https://pyup.io/repos/github/oesah/obfuscator/shield.svg
-     :target: https://pyup.io/repos/github/oesah/obfuscator/
+.. image:: https://pyup.io/repos/github/oesah/django-db-obfuscator/shield.svg
+     :target: https://pyup.io/repos/github/oesah/django-db-obfuscator/
      :alt: Updates
 
 
