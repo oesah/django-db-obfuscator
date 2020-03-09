@@ -3,11 +3,11 @@ Django DB Obfuscator
 ====================
 
 
-.. image:: https://img.shields.io/pypi/v/obfuscator.svg
-        :target: https://pypi.python.org/pypi/obfuscator
+.. image:: https://img.shields.io/pypi/v/django-db-obfuscator.svg
+        :target: https://pypi.python.org/pypi/django-db-obfuscator
 
-.. image:: https://img.shields.io/travis/oesah/obfuscator.svg
-        :target: https://travis-ci.com/oesah/obfuscator
+.. image:: https://img.shields.io/travis/oesah/django-db-obfuscator.svg
+        :target: https://travis-ci.com/oesah/django-db-obfuscator
 
 .. image:: https://readthedocs.org/projects/django-db-obfuscator/badge/?version=latest
         :target: https://django-db-obfuscator.readthedocs.io/en/latest/?badge=latest
