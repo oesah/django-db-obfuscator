@@ -18,5 +18,5 @@ Django app to obfuscate text data.
 
 This package was created with:
 
--   (Cookiecutter)[https://github.com/audreyr/cookiecutter]
--   (`audreyr/cookiecutter-pypackage`)[https://github.com/audreyr/cookiecutter-pypackage]
+-   [Cookiecutter](https://github.com/audreyr/cookiecutter)
+-   [`audreyr/cookiecutter-pypackage`](https://github.com/audreyr/cookiecutter-pypackage)
