@@ -14,5 +14,5 @@ deploy:
         secure: hYlZFuGUNHvvp5DfdrSKg+E6ncH6NMy6FuWuUP9aGd8cC7wMBpNi6TZ2NEJhoIOgzoFo0B6a3Vt1oIip9dZRKFdCRejQPYWa5vVrdhCyRibMB1KDKtKkcNQZDsx5IKMD7dyy3QS9O3RzkNZ5/BFnovGqyFGO0VD3Gj6yJGZSqCdumnKBnSmkQg/RHkJwJPiCMkvmAQPK4TXzrmuSyZSKdykvZfLOu0gnKn53CneX2IPFPWoN3cF4/+pQM18PTszlAiKQB9CF3/YxffAN7HVk5e9lUAvTolKri/6HYWgwhpyLVqFzH13apYs9vAllwj1Bg3VDIp+i3uKzN1gbq4pgp2ub3FiijX/3r2j6Al/qKX6/kcSuGH0zOY5GNdmppz3d3ktZ1y/DkuvlItfnLypwVun1yBEpSGRX8tAoSjeNByohjPrTPIfJS2fvI6YWrisYvZjpiZ0jlQzlXjGBAT9nTLXwYlNuBVI4r4DZAb6md5CKxrfDtHAVgZQNcCrmXWL1nSgxqG/yTzeS3ao7hnK0pnG+bsHg+EIxnbN6g5Xp/gEgASK9//8RJ56+emmtfLBW1P5sHqnEwAqU3kTWB1hmpm8g0qHyoQtQAbd9F83l568gQu9QdlVsnTjCems0mTlWTKMxQsOo5U/CCHuivAagZ+MOWnd4R2xEvWqnwtndNYs=
     on:
         tags: true
-        repo: oesah/obfuscator
+        repo: oesah/django-db-obfuscator
         python: 3.8
