@@ -102,10 +102,15 @@ Default:
 
 .. code:: python
 
-    {
-        models.CharField: 'text',
-        models.TextField: 'text',
-        models.EmailField: 'email'
+    OBFUSCATOR = {
+        'FIELDS_MAPPING': {
+            models.CharField: 'text',
+            models.TextField: 'text',
+            models.EmailField: 'email',
+            models.IntegerField: 'number',
+            models.URLField: 'text',
+            // ...
+        }
     }
 
 Map django model field types with obfuscator methods.
@@ -125,9 +130,11 @@ Example:
 
 .. code:: python
 
-    {
-        'contenttypes.ContentType': ['model', 'label'],
-        // ...
+    OBFUSCATOR = {
+        'FIELDS': {
+            'contenttypes.ContentType': ['model', 'label'],
+            // ...
+        }
     }
 
 License
