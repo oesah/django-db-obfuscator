@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 # Package meta-data.
 VERSION = __import__("obfuscator").__version__
-NAME = 'django-db-obfuscate'
+NAME = 'django-db-obfuscator'
 DESCRIPTION = 'Django app to obfuscate text data.'
 URL = 'https://github.com/oesah/django-db-obfuscator'
 EMAIL = 'os@oesah.ch'
