@@ -18,6 +18,9 @@ class ObfuscatorUtils(object):
     @staticmethod
     def text(value, max_length=None, **kwargs):
         """ """
+        if isinstance(value, list):
+            value = " ".join(value)
+
         hashed_value = hashlib.sha224(value.encode('utf-8')).hexdigest()
         length = len(hashed_value)
         if max_length and length > max_length:
