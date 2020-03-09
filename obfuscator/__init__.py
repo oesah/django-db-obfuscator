@@ -2,5 +2,5 @@
 
 __author__ = """Oezer Sahin"""
 __email__ = 'os@oesah.ch'
-__version__ = '0.1.1'
+__version__ = '0.1.0'
 __url__ = 'https://github.com/oesah/django-db-obfuscator/'
