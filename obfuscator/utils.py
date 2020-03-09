@@ -36,7 +36,8 @@ class ObfuscatorUtils(object):
     def json(value, max_length=None, **kwargs):
         """ """
         import json
-        hashed_value = hashlib.sha224(json.dumps(value)).hexdigest()
+        hashed_value = hashlib.sha224(
+            json.dumps(value).encode('utf-8')).hexdigest()
         length = len(hashed_value)
         if max_length and length > max_length:
             hashed_value = hashed_value[:(max_length - length)]
