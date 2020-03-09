@@ -9,6 +9,7 @@ DEFAULTS = {
         models.CharField: 'text',
         models.TextField: 'text',
         models.EmailField: 'email',
+        models.IntegerField: 'number',
     },
     'FIELDS': {}
 }

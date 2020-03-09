@@ -18,7 +18,7 @@ Django DB Obfuscator
      :alt: Updates
 
 
-Django app to obfuscate text data. Originally develop by `Dipcode Software <https://github.com/dipcode-software>`_
+Django app to obfuscate text data. Originally develop by `Dipcode Software <https://github.com/dipcode-software>`_.
 
 Compatibility
 -------------
