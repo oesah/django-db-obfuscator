@@ -136,3 +136,8 @@ License
 MIT license, see the LICENSE file. You can use obfuscator in open source
 projects and commercial products.
 
+
+Sponsorship
+-----------
+
+This project is maintained by `Mathison AG | Mobile & Web Development <https://mathison.ch>`_.
